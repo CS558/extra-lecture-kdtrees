@@ -119,5 +119,3 @@ In addition to range queries, there are a few other things that we can do with k
 ### Closest point
 Probably the number one application for kd-trees is nearest neighbor queries.  The basic idea is that we maintain and iteratively update a bounding sphere around a point as we traverse the tree, visiting only the nodes which are close to the point.
 
-# Next time
-Next lecture we are gong to discuss range trees and advanced 
