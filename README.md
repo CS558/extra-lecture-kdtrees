@@ -111,11 +111,3 @@ And so in general, the cost of range searching on a kdtree is:
 O(n^(1 - 1/d) + k)
 
 As a result, if d becomes large then the speed up from kd-trees tends to 0 quickly.  This is actually optimal for any data structure that uses at most O(n) extra space.  One could also ask how frequently the bad cases pop up.  On the other hand, if the size of the query regions is relatively small, then we would expect to get closer to O(log(n)) time for most of the queries.
-
-## Advanced stuff
-
-In addition to range queries, there are a few other things that we can do with kd-trees.
-
-### Closest point
-Probably the number one application for kd-trees is nearest neighbor queries.  The basic idea is that we maintain and iteratively update a bounding sphere around a point as we traverse the tree, visiting only the nodes which are close to the point.
-
